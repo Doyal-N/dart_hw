@@ -127,7 +127,7 @@ void main(List<String> arguments) {
   var data = receiveCars(mapAfter2010, allCars);
   data = receiveCars(mapBefore2010, data);
   data.sort((car, car2) => car.releaseDate.compareTo(car2.releaseDate));
-  data = uniqCars(data);
+  var uniqCars = data.toSet();
 
-  middleReleaseDates(data, currentYear, partCars);
+  middleReleaseDates(uniqCars, currentYear, partCars);
 }

@@ -46,18 +46,10 @@ List<AgriculturalMachinery> receiveCars(
   return storage;
 }
 
-List<AgriculturalMachinery> uniqCars(List<AgriculturalMachinery> cars) {
-  for (var i = 1; i < cars.length; i++) {
-    if (cars[i - 1] == cars[i]) cars.removeAt(i);
-  }
-  return cars;
-}
-
-middleReleaseDates(
-    List<AgriculturalMachinery> cars, int currentYear, int part) {
-  var sumAges = cars.fold<double>(
+middleReleaseDates(Set<AgriculturalMachinery> cars, int currentYear, int part) {
+  final sumAges = cars.fold<double>(
       0, (state, car) => (state + currentYear - car.releaseDate.year));
-  var sumPartAges = cars.take(part).fold<double>(
+  final sumPartAges = cars.take(part).fold<double>(
       0, (state, car) => (state + currentYear - car.releaseDate.year));
   var middleAgeAllCars = (sumAges / cars.length).round();
   var middleAgeOldCars = (sumPartAges / part).round();
