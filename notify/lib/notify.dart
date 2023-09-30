@@ -1,8 +1,10 @@
 import 'notify_content.dart';
 
+enum Type { sms, push, letter, email }
+
 class Notification {
   static const int periodOfLifeInHours = 24;
-  final String type;
+  final Type type;
   final NotificationContent content;
   final String contact;
   final String? address;
@@ -18,13 +20,13 @@ class Notification {
       required this.address});
 
   Notification.sms(
-      {this.type = 'sms',
+      {this.type = Type.sms,
       required this.content,
       required this.contact,
       this.address = ''});
 
   Notification.test(
-      {this.type = 'email',
+      {this.type = Type.email,
       required this.content,
       this.contact = 'example@gcom',
       this.address = ''});
