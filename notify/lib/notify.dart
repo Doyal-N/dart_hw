@@ -19,11 +19,8 @@ class Notification {
       required this.contact,
       required this.address});
 
-  Notification.sms(
-      {this.type = Type.sms,
-      required this.content,
-      required this.contact,
-      this.address = ''});
+  Notification.sms(this.address,
+      {this.type = Type.sms, required this.content, required this.contact});
 
   Notification.test(
       {this.type = Type.email,
