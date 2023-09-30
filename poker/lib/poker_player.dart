@@ -2,9 +2,10 @@ import 'package:poker/strategy.dart';
 
 class PokerPlayer {
   /// Список текущих карт в руке у игрока
-  List<String> _currentHand = ['King of clubs', 'Nine of hearts'];
+  final List<String> _currentHand = ['King of clubs', 'Nine of hearts'];
 
   /// Субъективная оценка выигрыша
+  // ignore: unused_field
   double _surenessInWin = 0;
 
   /// Вычислить шансы на выигрыш
