@@ -4,6 +4,7 @@ import 'package:poker/strategy.dart';
 void main() {
   final opponent = PokerPlayer();
 
+  // ignore: prefer_function_declarations_over_variables
   final Strategy fakeStrategy = (p0, p1) {
     for (var el in p0) {
       print('Player 1: $el');
