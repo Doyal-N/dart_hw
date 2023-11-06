@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-64.0.0",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-65.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/analyzer-6.2.0",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/analyzer-6.3.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -45,9 +45,9 @@
     },
     {
       "name": "coverage",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/coverage-1.6.3",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/coverage-1.7.1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "crypto",
@@ -117,7 +117,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/meta-1.10.0",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/meta-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -225,7 +225,7 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test-1.24.6",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test-1.24.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -237,7 +237,7 @@
     },
     {
       "name": "test_core",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_core-0.5.6",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_core-0.5.9",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -249,9 +249,9 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/vm_service-11.10.0",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.0"
     },
     {
       "name": "watcher",
@@ -284,7 +284,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-09-07T18:29:00.577271Z",
+  "generated": "2023-11-06T15:18:34.795707Z",
   "generator": "pub",
-  "generatorVersion": "3.0.3"
+  "generatorVersion": "3.1.3"
 }
