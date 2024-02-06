@@ -1,2 +1,34 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+__Даны входные данные. Цель — структурировать товары по подкатегориям, а подкатегории — по категориям.__
+
+#### Пример входных данных:
+
+```
+[
+    RawProductItem(
+      name: 'Персик',
+      categoryName: 'Растительная пища',
+      subcategoryName: 'Фрукты',
+      expirationDate: DateTime(2022, 12, 22),
+      qty: 5,
+    ),
+    RawProductItem(
+      name: 'Молоко',
+      categoryName: 'Молочные продукты',
+      subcategoryName: 'Напитки',
+      expirationDate: DateTime(2022, 12, 22),
+      qty: 5,
+    )
+]
+```
+
+#### Пример выходных данных:
+
+```
+{
+  'Растительная пища': {
+    'Фрукты': ['Персик', 'Груша'],
+    'Овощи': ['Морковь'],
+    'Крупы': ['Гречка'],
+  }
+}
+```
