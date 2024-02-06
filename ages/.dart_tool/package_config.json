@@ -45,7 +45,7 @@
     },
     {
       "name": "coverage",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/coverage-1.7.1",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/coverage-1.7.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -93,9 +93,9 @@
     },
     {
       "name": "js",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/js-0.7.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.1"
     },
     {
       "name": "lints",
@@ -111,9 +111,9 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/matcher-0.12.16",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "meta",
@@ -141,9 +141,9 @@
     },
     {
       "name": "path",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/path-1.8.3",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "pool",
@@ -225,19 +225,19 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test-1.24.9",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test-1.25.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_api-0.7.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_core-0.5.9",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/test_core-0.6.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -249,7 +249,7 @@
     },
     {
       "name": "vm_service",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/vm_service-13.0.0",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/vm_service-14.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -260,10 +260,16 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "web_socket_channel",
-      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
+      "name": "web",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/web-0.4.2",
       "packageUri": "lib/",
-      "languageVersion": "2.15"
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "web_socket_channel",
+      "rootUri": "file:///home/doyal/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
     },
     {
       "name": "webkit_inspection_protocol",
@@ -284,7 +290,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-11-06T15:18:34.795707Z",
+  "generated": "2024-01-15T16:57:58.759076Z",
   "generator": "pub",
-  "generatorVersion": "3.1.3"
+  "generatorVersion": "3.2.4"
 }
