@@ -26,33 +26,32 @@ class ProductItems {
   Map<String, Map<String, List<String>>> organizeProducts(DateTime today) {
     List<RawProductItem> products = [];
 
-    for (var elem in data) {
+    for (final elem in data) {
       var (name, categoryName, subcategoryName, expirationDate, qty) = elem;
-      var endDay = DateTime.parse(expirationDate);
+      final endDay = DateTime.parse(expirationDate);
 
-      if (qty != 0 && (today.compareTo(endDay) < 0)) {
-        RawProductItem item = RawProductItem(
-            name: name,
-            categoryName: categoryName,
-            subcategoryName: subcategoryName,
-            expirationDate: endDay,
-            qty: qty);
+      if (qty == 0) continue;
+      if (today.compareTo(endDay) >= 0) continue;
 
-        products.add(item);
-      }
+      RawProductItem item = RawProductItem(
+          name: name,
+          categoryName: categoryName,
+          subcategoryName: subcategoryName,
+          expirationDate: endDay,
+          qty: qty);
+
+      products.add(item);
     }
     return _organizeItems(products);
   }
 
   Map<String, Map<String, List<String>>> _organizeItems(
       List<RawProductItem> list) {
-    var result =
-        list.fold<Map<String, Map<String, List<String>>>>({}, (acc, item) {
+    return list.fold<Map<String, Map<String, List<String>>>>({}, (acc, item) {
       acc.putIfAbsent(item.categoryName, () => {});
       acc[item.categoryName]!.putIfAbsent(item.subcategoryName, () => []);
       acc[item.categoryName]![item.subcategoryName]!.add(item.name);
       return acc;
     });
-    return result;
   }
 }
