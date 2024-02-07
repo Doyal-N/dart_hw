@@ -23,7 +23,7 @@ class ProductItems {
     ('Груша', 'Растительная пища', 'Фрукты', '2022-12-25', 5)
   ];
 
-  List<RawProductItem> createActualProducts(DateTime today) {
+  Map<String, Map<String, List<String>>> organizeProducts(DateTime today) {
     List<RawProductItem> products = [];
 
     for (var elem in data) {
@@ -41,6 +41,18 @@ class ProductItems {
         products.add(item);
       }
     }
-    return products;
+    return _organizeItems(products);
+  }
+
+  Map<String, Map<String, List<String>>> _organizeItems(
+      List<RawProductItem> list) {
+    var result =
+        list.fold<Map<String, Map<String, List<String>>>>({}, (acc, item) {
+      acc.putIfAbsent(item.categoryName, () => {});
+      acc[item.categoryName]!.putIfAbsent(item.subcategoryName, () => []);
+      acc[item.categoryName]![item.subcategoryName]!.add(item.name);
+      return acc;
+    });
+    return result;
   }
 }
