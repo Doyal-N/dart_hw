@@ -1,5 +1,8 @@
-import 'package:shop/shop.dart' as shop;
+import 'package:shop/product_items.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${shop.calculate()}!');
+  DateTime today = DateTime.parse('2022-12-20');
+  var products = ProductItems().organizeProducts(today);
+
+  print(products);
 }
